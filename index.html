@@ -1,54 +1,587 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Curriculem Vitea</title>
-    <link 
-        rel="stylesheet"
-        href="./styles.css"
-        >
-    </head>
-<Body>
-    <Grid>
-        
-        <img src="./Images/Openingbanner.jpg" display="block" height="200px">
-    </Grid>
-    
-    <img width="300" src="./Images/profilePicture.jp" </img>
-    <div id="main"> 
-        <h1>Joël van Herwaarden</h1>
-        <h2>Structural Design Engineer</h2>
-        <div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StructureIQ — Civil Engineering Software</title>
+  <meta name="description" content="Smart SaaS tools for civil engineers — structural analysis, load calculations, project tracking and more." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2316a34a'/><path d='M8 22L14 10l6 8 4-5 4 7' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+</head>
+<body>
 
-            <h3>Hello, welcome</h3>
-            <pr width="10px"- wrap>I am an enthusiastic civil engineer who has a background in structural design 
-    and a fascination for automation. My daily job is to design civil structures and 
-    integrate innovations in the AEC within my projects.
-    
-    On the side I grew an interest for parametric design methodologies and programming. 
-    I have a first-hand experience in seeing the benefits of parametric design and automation.
-     
-    I like to take on technical challenges and finding the best solutions.  
-            </pre>
-            <div style="margin-top: 50px;">
-                <button class="primary_button">
-                    About me
-                 </button>
+<!-- ─── NAVIGATION ─────────────────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 15L7 7l5 6 3-4 4 6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      StructureIQ
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main class="page">
+
+  <!-- ─── HERO ──────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge anim">
+            <span>🟢</span> Now available: AI-powered structural analysis
+          </div>
+          <h1 class="hero-headline anim anim-d1">
+            Civil engineering tools<br>
+            built for the <em>real world</em>
+          </h1>
+          <p class="hero-sub anim anim-d2">
+            Precision SaaS software for structural engineers, project managers,
+            and site teams. From load calculations to project dashboards —
+            everything you need in one platform.
+          </p>
+          <div class="hero-actions anim anim-d3">
+            <a href="#products" class="btn btn-primary btn-lg">Explore tools →</a>
+            <a href="#projects" class="btn btn-secondary btn-lg">See our work</a>
+          </div>
+          <div class="hero-stats anim anim-d4">
+            <div class="stat-item">
+              <span class="stat-num">120+</span>
+              <span class="stat-label">Projects delivered</span>
             </div>
-        </div>
-    </div>
-    <div class="chapter">
-        <h1>
-            Skills
-        </h1>
-        <div class="expContainer">
-            <h3>2024</h3>
-            <div>
-                <h3>Knooppunt nieuwe meer</h3>
-                <pre style="width: 400px; margin-left: -100px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec sit amet orci sit amet neque rhoncus lacinia. Aenean sodales lacus nec turpis hendrerit, at luctus eros lacinia. 
-                    Vestibulum varius dictum lorem, mollis vulputate felis luctus quis. Pellentesque in turpis quis elit suscipit efficitur laoreet accumsan lacus. Mauris porttitor commodo lorem, eget mattis dolor commodo sit amet. Phasellus viverra congue tortor, vitae dapibus felis pharetra et. Ut laoreet massa nec dui varius, ut interdum mauris hendrerit. Aliquam erat volutpat. Morbi luctus orci eros, ut faucibus tellus convallis porttitor. Nulla interdum elementum arcu a varius. In cursus, neque sit amet cursus dignissim, erat ante ultricies ipsum, vulputate efficitur quam massa eu erat. Nullam commodo facilisis mi, nec blandit nulla consectetur nec. Nulla quis purus risus. Duis vulputate libero et felis lobortis vulputate non nec lacus.
-                </pre>
+            <div class="stat-item">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Precision tools</span>
             </div>
+            <div class="stat-item">
+              <span class="stat-num">98%</span>
+              <span class="stat-label">Client satisfaction</span>
+            </div>
+          </div>
         </div>
+
+        <!-- Hero visual card -->
+        <div class="hero-visual anim anim-d2">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="hc-dot" style="background:#f87171"></div>
+              <div class="hc-dot" style="background:#fbbf24"></div>
+              <div class="hc-dot" style="background:#4ade80"></div>
+              <h4 style="margin-left:.5rem;color:var(--c-slate-3);font-weight:500;font-size:.85rem;">Project dashboard — Riverside Bridge</h4>
+            </div>
+            <div class="progress-row">
+              <div class="prog-item">
+                <div class="prog-label">
+                  <span>Structural analysis</span><span>94%</span>
+                </div>
+                <div class="prog-bar-bg">
+                  <div class="prog-bar green" data-width="94%" style="width:0"></div>
+                </div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label">
+                  <span>Foundation design</span><span>78%</span>
+                </div>
+                <div class="prog-bar-bg">
+                  <div class="prog-bar sky" data-width="78%" style="width:0"></div>
+                </div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label">
+                  <span>Load calculations</span><span>100%</span>
+                </div>
+                <div class="prog-bar-bg">
+                  <div class="prog-bar lime" data-width="100%" style="width:0"></div>
+                </div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label">
+                  <span>Documentation</span><span>61%</span>
+                </div>
+                <div class="prog-bar-bg">
+                  <div class="prog-bar amber" data-width="61%" style="width:0"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-cards">
+            <div class="mini-card">
+              <div class="mini-card-icon" style="background:#dcfce7">🏗️</div>
+              <h5>Load Analyzer</h5>
+              <p>Real-time structural load</p>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card-icon" style="background:#e0f2fe">📐</div>
+              <h5>Section Designer</h5>
+              <p>Beam & column sizing</p>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card-icon" style="background:#fef3c7">📊</div>
+              <h5>Project Tracker</h5>
+              <p>Milestones & reports</p>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card-icon" style="background:#f0fdf4">🔍</div>
+              <h5>Site Inspector</h5>
+              <p>Field data capture</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</Body>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────── -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+
+        <div class="about-img-wrap">
+          <div class="about-img-placeholder">
+            <!-- Abstract engineering SVG illustration -->
+            <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="160" width="160" height="20" rx="4" fill="#16a34a"/>
+              <rect x="50" y="100" width="20" height="60" fill="#16a34a"/>
+              <rect x="90" y="60" width="20" height="100" fill="#16a34a"/>
+              <rect x="130" y="120" width="20" height="40" fill="#16a34a"/>
+              <path d="M20 160L50 100L90 60L130 120L170 80" stroke="#052e16" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="50" cy="100" r="6" fill="#052e16"/>
+              <circle cx="90" cy="60" r="6" fill="#052e16"/>
+              <circle cx="130" cy="120" r="6" fill="#052e16"/>
+              <circle cx="170" cy="80" r="6" fill="#052e16"/>
+              <line x1="20" y1="40" x2="180" y2="40" stroke="#052e16" stroke-width="1.5" stroke-dasharray="4 4"/>
+            </svg>
+          </div>
+          <div class="about-badge-float">
+            <div class="ab-icon">🏆</div>
+            <div class="ab-text">
+              <strong>15+ years experience</strong>
+              <span>in civil engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="section-tag anim">About me</span>
+          <h2 class="section-title anim anim-d1">
+            Engineering software<br>rooted in <em>field expertise</em>
+          </h2>
+          <p class="section-sub anim anim-d2">
+            I'm a licensed civil engineer turned software builder. After spending
+            15 years designing bridges, highways, and structures across Europe,
+            I saw firsthand how outdated and fragmented our tooling was.
+            StructureIQ is my answer.
+          </p>
+
+          <div class="about-highlights">
+            <div class="about-highlight anim anim-d2">
+              <div class="ah-icon" style="background:#dcfce7">🎓</div>
+              <div class="ah-content">
+                <strong>MSc Structural Engineering — TU Delft</strong>
+                <p>Specialised in reinforced concrete design and seismic analysis</p>
+              </div>
+            </div>
+            <div class="about-highlight anim anim-d3">
+              <div class="ah-icon" style="background:#e0f2fe">🌍</div>
+              <div class="ah-content">
+                <strong>Projects across 8 countries</strong>
+                <p>From Dutch water infrastructure to German highway bridges and UK rail structures</p>
+              </div>
+            </div>
+            <div class="about-highlight anim anim-d4">
+              <div class="ah-icon" style="background:#fef3c7">💻</div>
+              <div class="ah-content">
+                <strong>Built by engineers, for engineers</strong>
+                <p>Every tool in this suite was designed to solve a real problem I encountered on real projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRODUCTS ──────────────────────────────────────────── -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag anim">Our tools</span>
+        <h2 class="section-title anim anim-d1">Precision tools for <em>every stage</em></h2>
+        <p class="section-sub anim anim-d2">
+          From early-stage feasibility to final documentation, our software covers the full engineering workflow.
+        </p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card featured anim anim-d1">
+          <div class="pc-top">
+            <div class="pc-badge-featured">Most popular</div>
+            <div class="pc-icon" style="background:#dcfce7">🏗️</div>
+            <div class="pc-tag" style="background:#dcfce7;color:#16a34a">Analysis</div>
+            <h3>Load Analyzer Pro</h3>
+            <p>Real-time structural load analysis with Eurocode 2 &amp; 3 compliance checking, wind and seismic loading, and instant report generation.</p>
+          </div>
+          <div class="pc-bottom">
+            <ul class="pc-features">
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#16a34a">✓</div>
+                Eurocode EN 1991–1998 compliance
+              </li>
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#16a34a">✓</div>
+                Live load combination editor
+              </li>
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#16a34a">✓</div>
+                PDF &amp; Excel export
+              </li>
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#16a34a">✓</div>
+                AI-assisted code checks
+              </li>
+            </ul>
+            <div class="pc-cta">
+              <span style="font-size:.82rem;color:var(--c-muted)">From €49/mo</span>
+              <span>Learn more →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card anim anim-d2">
+          <div class="pc-top">
+            <div class="pc-icon" style="background:#e0f2fe">📐</div>
+            <div class="pc-tag" style="background:#e0f2fe;color:#0ea5e9">Design</div>
+            <h3>Section Designer</h3>
+            <p>Interactive beam and column cross-section design tool with automatic reinforcement suggestions and utilisation ratios.</p>
+          </div>
+          <div class="pc-bottom">
+            <ul class="pc-features">
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#0ea5e9">✓</div>
+                RC, steel &amp; composite sections
+              </li>
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#0ea5e9">✓</div>
+                Auto reinforcement layout
+              </li>
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#0ea5e9">✓</div>
+                Utilisation ratio heatmaps
+              </li>
+            </ul>
+            <div class="pc-cta">
+              <span style="font-size:.82rem;color:var(--c-muted)">From €29/mo</span>
+              <span>Learn more →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card anim anim-d3">
+          <div class="pc-top">
+            <div class="pc-icon" style="background:#fef3c7">📊</div>
+            <div class="pc-tag" style="background:#fef3c7;color:#d97706">Management</div>
+            <h3>Project Tracker</h3>
+            <p>Gantt charts, milestone tracking, and automated progress reports tailored to civil engineering project phases.</p>
+          </div>
+          <div class="pc-bottom">
+            <ul class="pc-features">
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#d97706">✓</div>
+                Phase-based Gantt boards
+              </li>
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#d97706">✓</div>
+                Client-facing dashboards
+              </li>
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#d97706">✓</div>
+                Budget vs actual tracking
+              </li>
+            </ul>
+            <div class="pc-cta">
+              <span style="font-size:.82rem;color:var(--c-muted)">From €19/mo</span>
+              <span>Learn more →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card anim anim-d1">
+          <div class="pc-top">
+            <div class="pc-icon" style="background:#f3e8ff">🔍</div>
+            <div class="pc-tag" style="background:#f3e8ff;color:#9333ea">Field</div>
+            <h3>Site Inspector</h3>
+            <p>Mobile-first field data capture with photo annotations, defect logging, and automatic report generation for inspections.</p>
+          </div>
+          <div class="pc-bottom">
+            <ul class="pc-features">
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#9333ea">✓</div>
+                Offline-first mobile app
+              </li>
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#9333ea">✓</div>
+                GPS &amp; photo annotation
+              </li>
+              <li class="pc-feature">
+                <div class="pc-check" style="background:#9333ea">✓</div>
+                NEN &amp; ISO inspection forms
+              </li>
+            </ul>
+            <div class="pc-cta">
+              <span style="font-size:.82rem;color:var(--c-muted)">From €39/mo</span>
+              <span>Learn more →</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ───────────────────────────────────────────── -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag anim">Our work</span>
+        <h2 class="section-title anim anim-d1">Successfully <em>delivered</em></h2>
+        <p class="section-sub anim anim-d2">
+          Real projects, real impact — from critical infrastructure to urban development.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Featured project -->
+        <div class="project-card featured anim anim-d1">
+          <div class="proj-img-placeholder">
+              <img src="./Images/projects/knm/knm1.png"</img>
+          </div>
+            
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">Grondkeringen</span>
+              <span class="proj-tag">Parametrisch ontwerp</span>
+              <span class="proj-tag">Hoofdmodelleur</span>
+            </div>
+            <h3>Herinrichting Knooppunt "de Nieuwe Meer"</h3>
+            <p>Het ontwerp voor alle grondkerende constructies benodigd voor de herinrichting van het knooppunt de Nieuwe Meer en de reconstructie van de Zuidas</p>
+            <div class="proj-meta">
+              <div class="proj-meta-item">
+                <strong>TRIAX</strong><span>Opdrachtgever</span>
+              </div>
+              <div class="proj-meta-item">
+                <strong>16+</strong><span>Modellen</span>
+              </div>
+              <div class="proj-meta-item">
+                <strong>2.5 jaar</strong><span>Periode</span>
+              </div>
+              <div class="proj-meta-item">
+                <strong>A10 Zuid Amsterdam</strong><span>Locatie</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card anim anim-d2">
+          <div class="proj-img" style="background:linear-gradient(135deg,#1e3a5f,#1e40af)">
+            <div class="proj-img-placeholder">🏙️</div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">Highrise</span>
+              <span class="proj-tag">Foundation</span>
+            </div>
+            <h3>Rotterdam Mixed-Use Tower</h3>
+            <p>Foundation and structural frame design for a 42-storey mixed-use development in Rotterdam's central district.</p>
+            <div class="proj-meta">
+              <div class="proj-meta-item">
+                <strong>42 floors</strong><span>Height</span>
+              </div>
+              <div class="proj-meta-item">
+                <strong>Rotterdam</strong><span>Location</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card anim anim-d3">
+          <div class="proj-img" style="background:linear-gradient(135deg,#1c1917,#44403c)">
+            <div class="proj-img-placeholder">🛣️</div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">Highway</span>
+              <span class="proj-tag">Geotechnical</span>
+            </div>
+            <h3>A15 Highway Widening</h3>
+            <p>Structural assessment and design support for a 12km widening project on the A15 motorway, including 4 new viaduct structures.</p>
+            <div class="proj-meta">
+              <div class="proj-meta-item">
+                <strong>12km</strong><span>Corridor</span>
+              </div>
+              <div class="proj-meta-item">
+                <strong>Netherlands</strong><span>Location</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ────────────────────────────────────────────── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="contact-left">
+          <span class="section-tag anim">Contact</span>
+          <h2 class="section-title anim anim-d1">Let's talk about<br><em>your project</em></h2>
+          <p class="section-sub anim anim-d2">
+            Whether you're interested in our tools, a consulting engagement,
+            or just want to connect — I'd love to hear from you.
+          </p>
+
+          <div class="contact-info-items">
+            <div class="contact-info-item anim anim-d2">
+              <div class="ci-icon" style="background:#dcfce7">📍</div>
+              <div class="ci-text">
+                <strong>Office</strong>
+                <span>Heerhugowaard, North Holland, NL</span>
+              </div>
+            </div>
+            <div class="contact-info-item anim anim-d3">
+              <div class="ci-icon" style="background:#e0f2fe">✉️</div>
+              <div class="ci-text">
+                <strong>Email</strong>
+                <a href="mailto:hello@structureiq.nl">hello@structureiq.nl</a>
+              </div>
+            </div>
+            <div class="contact-info-item anim anim-d4">
+              <div class="ci-icon" style="background:#fef3c7">💼</div>
+              <div class="ci-text">
+                <strong>LinkedIn</strong>
+                <a href="#">linkedin.com/in/yourprofile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form anim anim-d2">
+          <form id="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Jan de Vries" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="jan@company.nl" required />
+              </div>
+              <div class="form-group full">
+                <label for="subject">What can I help you with?</label>
+                <select id="subject" name="subject">
+                  <option value="">Select a topic…</option>
+                  <option value="tools">Product / tool demo</option>
+                  <option value="consulting">Consulting project</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about your project or question…" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg form-submit">
+              Send Message →
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ─── FOOTER ────────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo" style="color:#e2e8f0">
+          <div class="nav-logo-icon">
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 15L7 7l5 6 3-4 4 6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          StructureIQ
+        </a>
+        <p>Smart SaaS tools for civil engineers. Built on 15 years of field experience, designed for the demands of modern projects.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul role="list">
+          <li><a href="#products">Load Analyzer Pro</a></li>
+          <li><a href="#products">Section Designer</a></li>
+          <li><a href="#products">Project Tracker</a></li>
+          <li><a href="#products">Site Inspector</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul role="list">
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Cookie policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 StructureIQ. All rights reserved.</span>
+      <span>Made in 🇳🇱 Heerhugowaard</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
