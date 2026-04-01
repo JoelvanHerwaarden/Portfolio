@@ -2,3 +2,50 @@ font =
 button color = #fbcb18
 accent Color = #edb007
 background = #111828
+
+
+//Dark Theme
+accent color = #fd5e53
+button color = #fd5e53
+fontcolor = #c2c0b6
+backgroundColor = #262624
+textfield = #30302e
+Popup backgrounds = #141413
+
+Ik maak een website voor mijn diensten als constructief modelleur in de civiele techniek. 
+
+Ik ben zo'n 10 jaar actief als constructief ontwerp van civiele constructies. 
+Hierbij maak ik de BIM modellen, stem ik raakvlakken af en maak ik voor elke project 
+fase de juiste tekeningen met oog voor detail en maakbaarheid. Dit doe ik vooral door 
+gebruik te maken van diverse ontwerptools zoals Revit, Rhino en Grasshopper en diverse 
+zelfgeprogrameerde tools. Ik beheers Python en C#. Daarnaast maak ik ook een aantal 
+tools die handig zijn in het gehele ontwerpproces, zoals: Een export tool voor het periodiek 
+maken van diverse exports vanuit Revit of een automatische synchronisatietool voor het opslaan
+van je werk in Revit.
+
+De website moet de volgende stijl bevatten en kleuren hanteren.
+accent color = #fd5e53
+button color = #fd5e53
+fontcolor = #c2c0b6
+backgroundColor = #262624
+textfield = #30302e
+Popup backgrounds = #141413
+
+Hanteer de volgende opbouw voor de code base:
+index.html
+./css/style.css
+./js/main.js
+
+
+Ik wil de landing pagina vanuit het midden centreren waarbij op de pagine met een korte tekst duidelijk is wat voor hoofddienst ik doe met daaronder de volgende 4 sub diensten:
+- Coordineren van raakvlakken
+- Opstellen van BIM modellen
+- Het maken van documentatie/tekeningen
+- Het programmeren van (tailored) tooling
+
+Op deze diensten moet je kunnen klikken en naar een volgende deel van de pagina geleid worden waar toegelicht wordt wat er met deze diensten bedoeld wordt met een afbeelding.
+Hanteer hiervoor een om en om grid. Dus tekst links en foto rechts bij dienst 1 en anderom bij de volgende
+
+
+Ook wil ik een deel voor referentie projecten 
+
